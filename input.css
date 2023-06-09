@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Spring Nut";
+  src: url("../fonts/SpringNutmegBlack.otf") format("opentype");
+}
+
+.cst-content {
+  font-family: "Roboto";
+}
+
+.cst-visible {
+  visibility: visible !important;
+}
+
+.cst-content h2 {
+  font-family: "Spring Nut";
+  font-weight: 900;
+}

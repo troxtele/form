@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-slate-600">
+    <div class="cst-content h-screen w-full flex justify-center items-center">
+      <form class="p-10 max-w-[35rem] rounded-lg grid gap-5 bg-white m-4">
+        <!-- heading -->
+        <div class="header text-center text-2xl font-black uppercase">
+          <h2>Firmenfitness von Hansefit</h2>
+        </div>
+        <!-- para -->
+        <div class="para text-center text-[#6B7986]">
+          <p>
+            Geben Sie einfach den von Ihrem Arbeitgeber zur Verfügung gestellten
+            Registrierungscode hier ein, um mehr über das Hansefit Angebot zu
+            erfahren und sich gleich anzumelden. Viel Spaß mit Hansefit!
+          </p>
+        </div>
+        <!-- input -->
+        <div class="wrapper mt-6">
+          <div class="relative filed">
+            <input
+              type="text"
+              class="peer cst-input border border-[#6B7986] block w-full rounded bg-transparent py-2 px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear peer-focus:text-primary motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              id="register"
+            />
+            <label
+              for="register"
+              class="pointer-events-none register absolute left-3 top-1/2 transform -translate-y-1/2 max-w-[90%] origin-[0_0] truncate leading-[1] text-neutral-900 transition-all duration-200 ease-out peer-focus:-translate-y-[1.8rem] peer-focus:scale-[0.85] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.8rem] peer-data-[te-input-state-active]:scale-[0.85] motion-reduce:transition-none dark:peer-focus:text-primary bg-white"
+              >Registrierungscode
+            </label>
+            <!-- cross -->
+            <div
+              class="cross absolute top-1/2 transform -translate-y-1/2 right-4 rounded-full bg-gray-400 text-white cursor-pointer h-5 w-5 invisible flex justify-center items-center"
+            >
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="0"
+                viewBox="0 0 15 15"
+                height="0.9em"
+                width="0.9em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- btn -->
+        <div class="btn mt-6 flex justify-end items-center">
+          <button
+            type="submit"
+            class="bg-[#003BB3] text-white rounded-3xl py-2 px-10"
+          >
+            Einlösen
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- script -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+      integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
